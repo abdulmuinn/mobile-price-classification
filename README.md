@@ -38,3 +38,15 @@ To classify mobile phones into four price ranges (low, medium, high, very high) 
 ## 🚀 How to Run
 ```bash
 pip install -r requirements.txt
+
+Open the notebook:
+
+notebook/mobile_price_classification.ipynb
+
+📌 Results
+
+The final model achieves strong generalization performance with balanced precision and recall across all classes.
+
+📎 Author
+
+Abdul Muin

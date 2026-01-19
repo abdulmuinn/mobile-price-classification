@@ -1,10 +1,12 @@
 **📱 Mobile Price Classification – Deep Learning Project**
+
 🔍 Project Overview
 
 This project is a Mobile Phone Price Classification System built using Deep Learning (TensorFlow / Keras).
 The model predicts the price category of a smartphone based on its hardware specifications.
 
 **🎯 Goal:**
+
 Help users estimate whether a phone belongs to:
 
 Low Price
@@ -78,6 +80,7 @@ Display prediction confidence
 The UI focuses on clarity and usability, making it easy for non-technical users.
 
 **📁 Project Structure**
+
 mobile-price-classification/
 │
 ├── app.py                  # Streamlit application
@@ -91,6 +94,7 @@ mobile-price-classification/
 └── requirements.txt
 
 **⚙️ How to Run Locally**
+
 conda activate ml310
 python -m streamlit run app.py
 

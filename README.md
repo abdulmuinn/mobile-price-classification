@@ -1,105 +1,110 @@
-**📱 Mobile Price Classification – Deep Learning Project**
+# 📱 Mobile Price Classification – Deep Learning Project
 
-🔍 Project Overview
+## 🔍 Project Overview
+This project is a **Mobile Phone Price Classification System** built using **Deep Learning** with **TensorFlow & Keras**.
 
-This project is a Mobile Phone Price Classification System built using Deep Learning (TensorFlow / Keras).
-The model predicts the price category of a smartphone based on its hardware specifications.
+The model predicts the **price category of a smartphone** based on its hardware specifications, such as RAM, battery, camera, CPU, and screen features.
 
-**🎯 Goal:**
+🎯 **Objective:**  
+To classify smartphones into price categories using a data-driven and machine learning approach.
 
-Help users estimate whether a phone belongs to:
+---
 
-Low Price
+## 🧠 Problem Statement
+Smartphone prices vary significantly based on their specifications.  
+For non-experts, it is difficult to determine whether a phone belongs to a low, medium, or high price range just by looking at its specs.
 
-Medium Price
+This project aims to solve that problem by using a **Deep Learning model** to automatically classify smartphone prices.
 
-High Price
+---
 
-Very High Price
+## 💡 Solution
+A **Neural Network model** was trained to perform **multi-class classification**, predicting one of the following categories:
 
-based on technical features such as RAM, battery, camera, CPU, and screen specs.
+- 💸 Low Price  
+- 💰 Medium Price  
+- 💎 High Price  
+- 👑 Very High Price  
 
-**🧠 Machine Learning Approach**
+The model learns patterns from smartphone specifications and outputs the most likely price category.
 
-Problem Type: Multi-class classification
+---
 
-Model: Fully Connected Neural Network (Dense NN)
+## 📊 Dataset & Features
+The dataset contains **20 numerical features** related to smartphone specifications, including:
 
-Framework: TensorFlow & Keras
+- Battery Power (mAh)
+- RAM (MB)
+- Internal Memory (GB)
+- CPU Clock Speed (GHz)
+- Number of CPU Cores
+- Front & Primary Camera (MP)
+- Screen Height & Width
+- Pixel Resolution (Height & Width)
+- Device Weight & Thickness
+- Connectivity Features (WiFi, Bluetooth, 3G, 4G, Dual SIM)
+- Talk Time
 
-Evaluation Metrics: Accuracy, Precision, Recall, F1-score
+The target variable is **price_range**, representing the price category.
 
-The model was trained on a labeled dataset containing mobile phone specifications and price ranges.
+---
 
-**📊 Model Performance**
+## 🧠 Model & Approach
+- **Model Type:** Fully Connected Neural Network (Dense Layers)
+- **Framework:** TensorFlow & Keras
+- **Preprocessing:** Feature scaling using StandardScaler
+- **Problem Type:** Multi-class Classification
+- **Loss Function:** Sparse Categorical Crossentropy
+- **Optimizer:** Adam
 
-Test Accuracy: ~95%
+---
 
-Macro F1-Score: ~0.95
+## ✅ Model Performance
+The model demonstrates strong and balanced performance across all price categories.
 
-The model generalizes well across all 4 price categories.
+- **Accuracy:** ~95%
+- **Evaluation Metrics:** Accuracy, Precision, Recall, F1-score
+- **Validation Tools:** Confusion Matrix & Classification Report
 
-Confusion Matrix and classification report were used to validate performance.
+This indicates good generalization on unseen data.
 
-**🧾 Features Used**
+---
 
-The model uses 20 numerical features, including:
+## 🖥️ Application
+A simple **Streamlit web application** was built to demonstrate the model.
 
-Battery Power (mAh)
+### App Features:
+- User-friendly input interface for phone specifications
+- Instant price category prediction
+- Prediction confidence visualization
 
-RAM (MB)
+This makes the model accessible even to non-technical users.
 
-Internal Memory (GB)
+---
 
-CPU Clock Speed (GHz)
-
-Number of CPU Cores
-
-Front & Primary Camera (MP)
-
-Screen Height & Width
-
-Pixel Resolution (Height & Width)
-
-Device Weight & Thickness
-
-Connectivity Features (WiFi, Bluetooth, 3G, 4G, Dual SIM)
-
-Talk Time
-
-**🖥️ Application Interface**
-
-A simple Streamlit web application was built to:
-
-Input phone specifications via sliders & inputs
-
-Predict the price category
-
-Display prediction confidence
-
-The UI focuses on clarity and usability, making it easy for non-technical users.
-
-**📁 Project Structure**
-
+## 📁 Project Structure
 mobile-price-classification/
 │
-├── app.py                  # Streamlit application
+├── app.py # Streamlit application
 ├── dataset/
-│   └── train.csv            # Training dataset
+│ └── train.csv # Training dataset
 ├── model/
-│   └── final_mobile_price_model.keras
+│ └── final_mobile_price_model.keras
 ├── notebook/
-│   └── training.ipynb       # Model training & evaluation
+│ └── training.ipynb # Model training & evaluation
 ├── README.md
 └── requirements.txt
 
-**⚙️ How to Run Locally**
+yaml
+Copy code
 
+---
+
+## ⚙️ How to Run Locally
+```bash
 conda activate ml310
 python -m streamlit run app.py
-
-**🛠️ Tech Stack**
-
+🛠️ Tech Stack
 Python 3.10
 
 TensorFlow / Keras
@@ -112,31 +117,28 @@ Streamlit
 
 Matplotlib & Seaborn
 
-**💡 Key Learnings**
+📚 Key Learnings
+Building deep learning models for classification problems
 
-Handling multi-class classification problems
+Feature preprocessing and scaling
 
-Building and evaluating deep learning models
-
-Feature scaling and preprocessing
+Evaluating models using multiple metrics
 
 Debugging real-world ML compatibility issues
 
-Creating user-friendly ML applications
+Deploying ML models into user-facing applications
 
-**🚀 Future Improvements**
-
+🚀 Future Improvements
 Add model explainability (feature importance)
 
-Improve UI design
+Improve UI/UX design
 
 Add REST API for predictions
 
-Experiment with other models (XGBoost, Random Forest)
+Experiment with other ML models (e.g., XGBoost)
 
-**👤 Author**
-
+👤 Author
 Abdul Muin
 AI & Machine Learning Enthusiast
 
-📌 This project was built as part of a personal portfolio to demonstrate practical machine learning and application development skills.
+This project was developed as part of a personal portfolio to demonstrate practical machine learning and application development skills.

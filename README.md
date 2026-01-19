@@ -1,10 +1,10 @@
-📱 Mobile Price Classification – Deep Learning Project
+**📱 Mobile Price Classification – Deep Learning Project**
 🔍 Project Overview
 
 This project is a Mobile Phone Price Classification System built using Deep Learning (TensorFlow / Keras).
 The model predicts the price category of a smartphone based on its hardware specifications.
 
-🎯 Goal:
+**🎯 Goal:**
 Help users estimate whether a phone belongs to:
 
 Low Price
@@ -17,7 +17,7 @@ Very High Price
 
 based on technical features such as RAM, battery, camera, CPU, and screen specs.
 
-🧠 Machine Learning Approach
+**🧠 Machine Learning Approach**
 
 Problem Type: Multi-class classification
 
@@ -29,7 +29,7 @@ Evaluation Metrics: Accuracy, Precision, Recall, F1-score
 
 The model was trained on a labeled dataset containing mobile phone specifications and price ranges.
 
-📊 Model Performance
+**📊 Model Performance**
 
 Test Accuracy: ~95%
 
@@ -39,7 +39,7 @@ The model generalizes well across all 4 price categories.
 
 Confusion Matrix and classification report were used to validate performance.
 
-🧾 Features Used
+**🧾 Features Used**
 
 The model uses 20 numerical features, including:
 
@@ -65,7 +65,7 @@ Connectivity Features (WiFi, Bluetooth, 3G, 4G, Dual SIM)
 
 Talk Time
 
-🖥️ Application Interface
+**🖥️ Application Interface**
 
 A simple Streamlit web application was built to:
 
@@ -77,7 +77,7 @@ Display prediction confidence
 
 The UI focuses on clarity and usability, making it easy for non-technical users.
 
-📁 Project Structure
+**📁 Project Structure**
 mobile-price-classification/
 │
 ├── app.py                  # Streamlit application
@@ -90,11 +90,11 @@ mobile-price-classification/
 ├── README.md
 └── requirements.txt
 
-⚙️ How to Run Locally
+**⚙️ How to Run Locally**
 conda activate ml310
 python -m streamlit run app.py
 
-🛠️ Tech Stack
+**🛠️ Tech Stack**
 
 Python 3.10
 
@@ -108,7 +108,7 @@ Streamlit
 
 Matplotlib & Seaborn
 
-💡 Key Learnings
+**💡 Key Learnings**
 
 Handling multi-class classification problems
 
@@ -120,7 +120,7 @@ Debugging real-world ML compatibility issues
 
 Creating user-friendly ML applications
 
-🚀 Future Improvements
+**🚀 Future Improvements**
 
 Add model explainability (feature importance)
 
@@ -130,7 +130,7 @@ Add REST API for predictions
 
 Experiment with other models (XGBoost, Random Forest)
 
-👤 Author
+**👤 Author**
 
 Abdul Muin
 AI & Machine Learning Enthusiast

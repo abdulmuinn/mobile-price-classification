@@ -95,8 +95,6 @@ mobile-price-classification/
 ├── README.md
 └── requirements.txt
 
-yaml
-Copy code
 
 ---
 
